@@ -29,5 +29,5 @@ export function loadHeader() {
     $header.appendChild($homeLink);
     $header.appendChild($menuLink);
     $header.appendChild($contactLink);
-    return $header
+    document.querySelector('#content').appendChild($header);
 }
