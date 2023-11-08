@@ -1,6 +1,7 @@
 import { loadHome } from "./loadHome.js";
 import { loadMenu } from "./loadMenu.js";
-import { loadContact } from "./loadContact.js"; 
+import { loadContact } from "./loadContact.js";
+import logo from './images/logo.png'
 
 function createHeaderLink(linkFunction) {
     const $link = document.createElement('a');
@@ -16,8 +17,9 @@ function createHeaderLink(linkFunction) {
 export function loadHeader() {
     const $header = document.createElement('header');
 
-    const $headerTitle = document.createElement('h1');
-    $headerTitle.textContent = 'The Krusty Krab';
+    const $logo = document.createElement('img');
+    $logo.src = logo;
+    console.log($logo.src)
 
     const $homeLink = createHeaderLink(loadHome);
     $homeLink.textContent = 'Home';
@@ -26,9 +28,14 @@ export function loadHeader() {
     const $contactLink = createHeaderLink(loadContact);
     $contactLink.textContent = 'Contact';
 
-    $header.appendChild($headerTitle);
-    $header.appendChild($homeLink);
-    $header.appendChild($menuLink);
-    $header.appendChild($contactLink);
-    document.querySelector('body').appendChild($header);
+    const $linksContainer = document.createElement('div');
+
+    $linksContainer.appendChild($homeLink);
+    $linksContainer.appendChild($menuLink);
+    $linksContainer.appendChild($contactLink);
+    $header.appendChild($logo);
+    $header.appendChild($linksContainer);
+    
+    const $contentContainer = document.querySelector('#content-container');
+    document.querySelector('body').insertBefore($header, $contentContainer);
 }
