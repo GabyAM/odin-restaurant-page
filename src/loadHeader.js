@@ -2,6 +2,7 @@ import { loadHome } from "./loadHome.js";
 import { loadMenu } from "./loadMenu.js";
 import { loadContact } from "./loadContact.js";
 import logo from './images/logo.png'
+import './header.css'
 
 function createHeaderLink(linkFunction) {
     const $link = document.createElement('a');
@@ -19,6 +20,7 @@ export function loadHeader() {
 
     const $logo = document.createElement('img');
     $logo.src = logo;
+    $logo.className = 'logo';
     console.log($logo.src)
 
     const $homeLink = createHeaderLink(loadHome);
@@ -29,6 +31,7 @@ export function loadHeader() {
     $contactLink.textContent = 'Contact';
 
     const $linksContainer = document.createElement('div');
+    $linksContainer.className = 'links-container';
 
     $linksContainer.appendChild($homeLink);
     $linksContainer.appendChild($menuLink);
