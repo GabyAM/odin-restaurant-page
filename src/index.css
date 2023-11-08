@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: krabby-patty;
+    src: url(./fonts/KrabbyPatty.ttf);
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #49a6ec, #143cc0);
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+#content-container {
+    padding: 50px;
+}
+
+#content {
+    background-color: #f8fbf1;
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 500px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
