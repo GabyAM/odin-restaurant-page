@@ -1,0 +1,42 @@
+#content h1, .home-secondary > h3 {
+    color: #585b87;
+    font-family: krabby-patty;
+}
+
+.home-main {
+    height: 250px;
+}
+
+.home-main, .home-secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home-main-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.krusty-krab {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+p{
+    font-weight: 400;
+}
+
+.home-secondary-info {
+    display: flex;
+    gap: 80px;
+    border-radius: 8px;
+}
+
+.home-info-section {
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+}
