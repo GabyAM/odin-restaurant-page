@@ -1,9 +1,11 @@
 import krabbyPatty from './images/krabbypatty.png'
 import kelpFries from './images/kelpfries.png'
 import seafoamSoda from './images/seafoamsoda.jfif'
+import './menu.css'
 
 function createMenuItem(title, description, imageSource) {
     const $container = document.createElement('div');
+    $container.className = 'menu-item';
 
     const $itemTitle = document.createElement('h3');
     $itemTitle.textContent = title;
