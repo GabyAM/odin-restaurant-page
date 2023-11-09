@@ -17,13 +17,17 @@ function createSocialLink (social) {
 
 export function loadContact() {
     const $textContainer = document.createElement('div');
+    $textContainer.className = 'contact-text-container';
     const $callToActionText = document.createElement('p');
     $callToActionText.textContent = "Join us at the Krusty Krab and make every meal an adventure! Whether you're celebrating with friends, bringing the family, or just seeking a taste of Bikini Bottom's finest, the Krusty Krab is the place to be. Dive into a world of flavor, fun, and fantastic memories.Don't miss out on the Krusty Krab experience – come visit us today!"
+    $callToActionText.className = 'contact-text';
     $textContainer.appendChild($callToActionText);
 
     const $contact = document.createElement('div');
+    $contact.className = 'contact';
 
     const $locationContainer = document.createElement('div');
+    $locationContainer.className = 'location';
     const $locationTitle = document.createElement('h3');
     $locationTitle.textContent = 'Location';
     const $locationDescription = document.createElement('p');
@@ -36,6 +40,7 @@ export function loadContact() {
     $locationContainer.appendChild($locationImage);
 
     const $social = document.createElement('div');
+    $social.className = 'social';
     const $socialTitle = document.createElement('h3');
     $socialTitle.textContent = 'Social Media';
     const $socialDescription = document.createElement('p');

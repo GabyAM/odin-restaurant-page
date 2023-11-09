@@ -1,0 +1,63 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+
+.contact-text-container {
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/interior.jpg);
+    background-size: cover;
+    max-width: 100%;
+    align-self: center;
+}
+
+.contact-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.location h3, .social h3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #585b87;
+    font-family: krabby-patty;
+}
+
+.location p {
+    font-weight: 500;
+}
+
+.location img {
+    min-width: 350px;
+    max-width: 600px;
+}
+
+.location, .social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+}
+
+.social iconify-icon {
+    font-size: 30px;
+}
