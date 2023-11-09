@@ -31,3 +31,7 @@ body {
     gap: 20px;
     flex-direction: column;
 }
+
+div, img {
+    border-radius: 8px;
+}
